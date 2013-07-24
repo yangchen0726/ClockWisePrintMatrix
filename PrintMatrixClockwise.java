@@ -2,7 +2,10 @@ public class PrintMatrixClockwise {
 
     public static void main(String[] args) {
         PrintMatrixClockwise obj = new PrintMatrixClockwise();
-        obj.printMatrix();
+        
+        int d = args[0];
+        int[][] ma = new int[d][d];
+        obj.printMatrix(ma);
     }
 
     public void printCircle(int[][] matrix, int startX, int startY, int endX, int endY) {
